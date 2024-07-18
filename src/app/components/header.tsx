@@ -2,9 +2,6 @@
 import { Box, IconButton, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import size from "@/../../public/images/size.svg";
-import vector from "@/../../public/images/vector.svg";
-import notification from "@/../../public/images/notification.svg";
 import LanguageDropdown from "./lngDropdown";
 import UserDropdown from "./userDropdown";
 interface HeaderProps {
@@ -93,13 +90,18 @@ const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
           >
             A
           </Typography>
-          <Image src={size.src} alt={"size"} width={7} height={14} />
+          <Image src={"/images/size.svg"} alt={"size"} width={7} height={14} />
         </Box>
         {/* vector element */}
-        <Image src={vector.src} alt={"vector"} width={15} height={18.281} />
+        <Image
+          src={"/images/vector.svg"}
+          alt={"vector"}
+          width={15}
+          height={18.281}
+        />
         {/* notification icon element */}
         <Image
-          src={notification.src}
+          src={"/images/notification.svg"}
           alt={"notification"}
           width={14}
           height={14.933}
