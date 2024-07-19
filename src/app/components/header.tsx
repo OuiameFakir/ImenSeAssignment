@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </Box>
         {/* vector element */}
         <Image
-          src={"/images/vector.svg"}
+          src={"/images/Vector.svg"}
           alt={"vector"}
           width={15}
           height={18.281}

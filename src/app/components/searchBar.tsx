@@ -6,7 +6,6 @@ const SearchBar = () => {
   return (
     <Box
       sx={{
-        width: "22.8125rem",
         display: "flex",
         paddingRight: "3.5625rem",
         gap: "0.6875rem",
@@ -16,7 +15,7 @@ const SearchBar = () => {
         alignItems: "center",
       }}
     >
-      <IconButton>
+      <IconButton disableRipple disableFocusRipple>
         <Image
           src={"/images/searchIcon.svg"}
           alt={"searchIcon"}

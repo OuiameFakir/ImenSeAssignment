@@ -5,6 +5,7 @@ import SearchBar from "./searchBar";
 import Image from "next/image";
 import ContractorBox from "./constractor";
 import CustomTable from "./table";
+import DateRange from "./dateRange";
 
 function MainBody() {
   return (
@@ -23,7 +24,7 @@ function MainBody() {
           sx={{
             color: "#313131",
             fontFamily: "Roboto",
-            fontSize: "1rem",
+            fontSize: { xs: "0.6rem", md: "1rem", lg: "1rem" },
             fontStyle: "normal",
             fontWeight: 500,
             lineHeight: "1.875rem",
@@ -33,6 +34,7 @@ function MainBody() {
         </Typography>
         <FilterContainer>
           <SearchBar />
+          <DateRange />
           <ContractorBox />
           <Box sx={{ width: "2.125rem" }}>
             <Image

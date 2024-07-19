@@ -8,9 +8,10 @@ export const MainBodyContainer = styled(Box)({
   padding: " 1.6875rem 2.1875rem 2.9375rem 2.25rem",
   background: "#F2F2F2",
 });
-export const FilterContainer = styled(Box)({
+
+export const FilterContainer = styled(Box)(({}) => ({
   display: "flex",
   height: "1.875rem",
   justifyContent: "center",
   gap: "0.6875rem",
-});
+}));
